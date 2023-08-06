@@ -92,7 +92,11 @@ CONCLUSION:
 This project highlights the importance of addressing class imbalance and the effectiveness of SMOTE in improving model performance in such scenarios.
 
 MODELS:
+
 Random-forest : random1.py
+
 Lightgbm : lightgb.py
+
 SVM : svm_machine.py
+
 Gaussian Naive bayes : gaussiannb.py
