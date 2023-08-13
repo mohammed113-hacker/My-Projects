@@ -87,6 +87,10 @@ value of 1 indicates perfect performance (the model makes correct predictions fo
 model has good discriminative ability and is capable of distinguishing between the positive and negative classes with high accuracy. The closer the AUC-ROC value 
 is to 1, the better the model's performance.
 
+![image](https://github.com/mohammed113-hacker/My-Projects/assets/79789933/d53d1bc3-584b-4087-b9c7-6ff56b72ff67)
+
+ROC Curve For The Random-Forest Model
+
 CONCLUSION:
 
 This project highlights the importance of addressing class imbalance and the effectiveness of SMOTE in improving model performance in such scenarios.
