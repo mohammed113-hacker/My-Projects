@@ -62,8 +62,8 @@ Resampled Data In The Dataset
 
 MODEL TRAINING AND TESTING : (In random1.py,lightgb.py,gaussianb.py,svm_machine.py)
 
-After applying the SMOTE algorithm to address the class imbalance, this could results to obtained resampled dataset with an equal representation of both fraudulent 
-and non-fraudulent claims.Each model is trained and tested individually and performance of the model is evaluated.
+After applying the SMOTE algorithm to address the class imbalance, this could results to obtained resampled dataset with an equal representation of both fraudulent and non-fraudulent claims.Each model is trained and tested individually and performance of the model is evaluated.
+
 
 MODEL EVALUATION:(In random1.py,lightgb.py,gaussianb.py,svm_machine.py)
 
@@ -100,3 +100,5 @@ Lightgbm : lightgb.py
 SVM : svm_machine.py
 
 Gaussian Naive bayes : gaussiannb.py
+
+Source.gv.pdf : This file Contains the Graphical visualization structure of Random-forest Model.
