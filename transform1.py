@@ -11,7 +11,7 @@ import numpy as np
 import sklearn.metrics
 from pylab import rcParams
 
-df = pd.read_csv('sample-data/insurance_claims1copy.csv')   #importing csv file
+df = pd.read_csv('sample-data/insurance_claims.csv')   #importing csv file
 
 # Setting up values in place of Y and N to 1 and 0
 df['fraud_reported'].replace(to_replace='Y', value=1, inplace=True)
@@ -108,8 +108,6 @@ print(df.select_dtypes(include=['object']).columns)
 
 print(df.fraud_reported.value_counts())
 
-
-#df.drop(columns=['fraud_reported'],inplace=True)
 # Convert non-numeric categorical columns to numeric using LabelEncoder
 label_encoder = LabelEncoder()
 for col in df.select_dtypes(include='object').columns:
@@ -123,7 +121,6 @@ for col in df.columns:
 X = df.drop(columns = ['fraud_reported'])  #dropping fraud_reported column
 
 y=df['fraud_reported']
-#X = pd.concat([df, df._get_numeric_data()], axis=1)
 # Check for non-numeric values in each column
 for col in df.columns:
     if df[col].dtype == object:  # Check if the column contains non-numeric values
