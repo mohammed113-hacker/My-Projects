@@ -18,16 +18,6 @@ from sklearn.tree import export_graphviz
 from transform1 import df as data_columns, label_encoder
 from transform1 import X,y
 
-#df = pd.read_csv('sample-data/insurance_claims1copy.csv')
-# Calculate the correlation matrix
-#corr_matrix = df.corr()
-#plt.figure(figsize=(10,20))
-# Visualize the correlation matrix using a heatmap
-#sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
-#plt.title("Correlation Matrix of  Dataset (before SMOTE)")
-
-#df.drop(columns=["vehicle_claim"],axis=1)
-#print(X.columns)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 # create an instance of the Random Forest classifier
@@ -82,11 +72,6 @@ importances_sorted = importances.sort_values(by='importance', ascending=False)
 
 # print the entire DataFrame to see the ranking of all features
 print(importances_sorted.head(10))
-# evaluate the random forest on the testing set
-#rf_pred = rf.predict(X_test)
-#print("Random Forest Classifier:")
-#print(classification_report(y_test, rf_pred))
-#print(confusion_matrix(y_test, rf_pred))
 
 # select the top 10 features
 selected_features = importances_sorted['feature'][:10]
@@ -169,18 +154,3 @@ max_index = np.argmax(youden_scores)
 optimal_threshold = thresholds[max_index]
 
 print("Optimal Threshold (Youden's Index):", optimal_threshold)
-
-#new_data=["month as customer","age","policy state","policy deductable","policy annual","umbrella limit","insured sex","insur edu level",
- #         "ins occ","ins hobb","ins rel","capi gains","cap-loss","inc state","coll type","incident sev","auth cont","inc state",
-  #        "inc city","num vech involve","prop damage","bodily inj","witness","pol rep avai","total claim amt","injury claim","property claim",
-   #       "veh claim","auto make","auto model","fraud rep","csl per person","csl per acc","vehicle age","incidet period of day"]
-#pd.set_option('display.max_columns', None)
-#num_rows_to_display = int(len(X_test) * 0.2)
-# Print the first 20% of the test data
-#print(X_test.head(num_rows_to_display))
-# Save the model
-#db = PickleShareDB('model.pkl')
-#db['model'] = rf_selected
-# Save the label encoder
-#db = PickleShareDB('label_encoder.pkl')
-#db['label_encoder'] = label_encoder
