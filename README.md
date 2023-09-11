@@ -3,6 +3,7 @@
 Project Title : A Robust Machine Learning Method For Finding Insurance Fraud Claims.
 
 INTRODUCTION:
+
 Insurance fraud poses a significant challenge to the insurance industry, leading to substantial financial losses and eroding trust among insurers and policyholders. 
 In recent years, the rise in fraudulent insurance claims had necessitated the development of effective fraud detection methods. According to the Coalition Against Insurance Fraud, 
 insurance fraud costs insurers an estimated $80 billion annually in the United States alone. In the early 2000s, the insurance industry experienced a surge in fraudulent claims 
