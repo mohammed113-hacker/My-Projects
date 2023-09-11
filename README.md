@@ -1,4 +1,6 @@
 # My-Projects
+
+Project Title : A Robust Machine Learning Method For Finding Insurance Fraud Claims.
 INTRODUCTION:
 
 The insurance fraud claim detection is a critical task in the insurance industry various methodologies were proposed in terms of detecting fraud claims but the 
