@@ -3,19 +3,17 @@
 Project Title : A Robust Machine Learning Method For Finding Insurance Fraud Claims.
 
 INTRODUCTION:
-
-The insurance fraud claim detection is a critical task in the insurance industry various methodologies were proposed in terms of detecting fraud claims but the 
-main thing is handling the proportionality between the fraud and non-fraud cases in the dataset before it was giving to the model in that case class imbalance may
-occur. Class imbalance where the number of fraudulent claims is significantly lower than legitimate claims poses a challenge for accurate fraud detection.
-In this work, I employed Synthetic Minority Over-sampling Technique (SMOTE) algorithm to address the imbalance problem and enhance the performance of the fraud 
-claim detection model. SMOTE is a popular technique for oversampling the minority class by creating synthetic samples that are similar to the existing minority 
-class instances. By generating synthetic examples, SMOTE helps in balancing the class distribution and allows the model to learn from a more representative 
-dataset. This technique is particularly effective when the available data is limited and insufficient to capture the complexities of the limited class. This 
-process results in a larger and more balanced dataset, enabling the model to learn from a diverse range of fraudulent claim patterns. By applying SMOTE to the 
-dataset, we are able to overcome the class imbalance issue and improve the performance of the fraud claim detection model. The resampled dataset provides a more 
-accurate representation of the underlying distribution, leading to enhanced detection of fraudulent claims. I evaluated the performance of the model by measuring 
-various metrics such as accuracy, precision, recall, and F1-score. Our findings demonstrate the effectiveness of SMOTE in addressing class imbalance with improved 
-random forest and LightGBM model for fraud claim detection process.
+Insurance fraud poses a significant challenge to the insurance industry, leading to substantial financial losses and eroding trust among insurers and policyholders. 
+In recent years, the rise in fraudulent insurance claims had necessitated the development of effective fraud detection methods. According to the Coalition Against Insurance Fraud, 
+insurance fraud costs insurers an estimated $80 billion annually in the United States alone. In the early 2000s, the insurance industry experienced a surge in fraudulent claims 
+related to staged car accidents, resulting in substantial financial losses. These incidents highlighted the need for robust fraud detection systems that can identify and prevent
+such fraudulent activities. In this project, i addressed the class imbalance issue in the dataset and discussed how it affects the performance of the fraud claim detection model 
+and i also discussed how we can resolve it by utilizing the Synthetic Minority Over-sampling Technique (SMOTE) algorithm. It is an oversampling technique that aims to balance the 
+class distribution by creating synthetic samples of the minority class. It works by generating new synthetic samples that capture the underlying patterns and characteristics of the 
+minority class, SMOTE enables the model to learn from a more representative dataset, thereby improving the performance of fraud claim detection. By applying SMOTE to the dataset,
+we are able to overcome the class imbalance issue and improve the performance of the fraud claim detection model. The resampled dataset provides a more accurate representation of 
+the underlying distribution, leading to enhanced detection of fraudulent claims. I evaluated the performance of the model by measuring various metrics such as accuracy, precision, 
+recall, and F1-score. My findings demonstrated the effectiveness of SMOTE in addressing class imbalance with improved random forest and LightGBM model for fraud claim detection process.
 
 DATA VISUALIZATION : (In visualize.py)
 
