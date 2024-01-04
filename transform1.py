@@ -11,7 +11,7 @@ import numpy as np
 import sklearn.metrics
 from pylab import rcParams
 
-df = pd.read_csv('sample-data/insurance_claims.csv')   #importing csv file
+df = pd.read_csv('insurance_claims.csv')   #importing csv file
 
 # Setting up values in place of Y and N to 1 and 0
 df['fraud_reported'].replace(to_replace='Y', value=1, inplace=True)
@@ -50,10 +50,10 @@ names = ["past_midnight", "early_morning", "morning", 'fore-noon', 'afternoon', 
 df['incident_period_of_day'] = pd.cut(df.incident_hour_of_the_day, bins, labels=names).astype(object)
 print(df[['incident_hour_of_the_day', 'incident_period_of_day']].head(20))
 
-corr_matrix = df.corr()
-plt.figure(figsize=(10,20))
+#corr_matrix = df.corr()
+#plt.figure(figsize=(10,20))
 # Visualize the correlation matrix using a heatmap
-sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+#sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
 
 # checking categorcial columns
 

@@ -22,7 +22,7 @@ params = {
     'learning_rate': 0.05,
     'feature_fraction': 0.9,
 }
-model = lgb.train(params, train_data, valid_sets=test_data, num_boost_round=1000, early_stopping_rounds=100)
+model = lgb.train(params, train_data, valid_sets=test_data, num_boost_round=1000)
 y_pred = model.predict(X_test)
 y_pred = np.round(y_pred)
 print("Accuracy:", accuracy_score(y_test, y_pred))
