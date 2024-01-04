@@ -16,6 +16,12 @@ we are able to overcome the class imbalance issue and improve the performance of
 the underlying distribution, leading to enhanced detection of fraudulent claims. I evaluated the performance of the model by measuring various metrics such as accuracy, precision, 
 recall, and F1-score. My findings demonstrated the effectiveness of SMOTE in addressing class imbalance with improved random forest and LightGBM model for fraud claim detection process.
 
+Web-Page for entering the data to check for Fraud Claims:
+
+
+[streamlit-output-2024-01-04-22-01-30.webm](https://github.com/mohammed113-hacker/My-Projects/assets/79789933/f2f31c4b-4daa-49ae-a929-5392f4c333e0)
+
+
 DATA VISUALIZATION : (In visualize.py)
 
 Statistical techniques are used in interpreting and selecting quality features relevant to this work to have a global view of the dataset and extract essential features. For example, I analyzed the frequency of features and the correlation between them.
@@ -95,11 +101,21 @@ ROC Curve For The Random-Forest Model
 
 CONCLUSION:
 
-This project highlights the importance of addressing class imbalance and the effectiveness of SMOTE in improving model performance in such scenarios.
+This project highlights the importance of addressing class imbalance and the effectiveness of SMOTE in improving model performance in such scenarios. AtLast, a Web-Page
+was made to feed the Insurance data to the well trained model to check for Fraud and Legitimate claims.
+
+
+FILES:
+
+visualizing_dataset.py : It is for visualizing the dataset using Charts,Bar-Graph, and box plots
+
+transform1.py : It is For Cleaning the dataset by eliminating duplicate values and Transforming the Non-Numeric columns into Numeric Data( Using Label encoders)
+
+output.py : It is for provding a Input Manually in the Web-Page to check whether the Trained Model is working Properly
 
 MODELS:
 
-Random-forest : random1.py
+Random-forest : random_forest.py
 
 Lightgbm : lightgb.py
 
